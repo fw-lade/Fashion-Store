@@ -3,18 +3,47 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0px 18px 40px 0px rgba(112, 144, 176, 0.12);
 }
 .navlinks {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 12px;
 }
 .navlinks a {
   font-size: 14px;
   font-weight: 600;
   color: #111111;
+  padding: 0 10px;
+  transition: 0.3s ease all;
 }
-.nav-cart img{
-    width: 30px;
-    cursor: pointer;
+.navlinks a:hover {
+  border-bottom: #111111 2px solid;
+  transform: translateY(-5px);
+}
+.nav-cart {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+  position: relative;
+}
+.nav-cart:hover {
+  transform: translateY(-5px);
+  background-color: #e2e2e2;
+}
+.nav-cart img {
+  width: 30px;
+  cursor: pointer;
+}
+.nav-cart span {
+  font-size: 10px;
+  font-weight: 600;
+  color: #111111;
+  position: absolute;
+  transform: translateX(-50%, -50%);
+  top: 15px;
 }

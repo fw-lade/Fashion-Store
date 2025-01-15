@@ -1,0 +1,26 @@
+.products-wrapper {
+  padding: 42px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header h1 {
+  font-size: 28px;
+  font-family: inter;
+  font-weight: 600;
+  text-align: center;
+}
+.title-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-sort h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
