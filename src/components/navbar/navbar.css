@@ -1,0 +1,20 @@
+.navbar {
+  padding: 12px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.navlinks a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+}
+.nav-cart img{
+    width: 30px;
+    cursor: pointer;
+}
