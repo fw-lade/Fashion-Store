@@ -16,16 +16,15 @@ const Nav = () => {
   return (
     <>
       <nav className="nav">
-        <NavLink to="/products">Products</NavLink>
-        <NavLink to="/men">Men</NavLink>
-        <NavLink to="/women">Women</NavLink>
+        <NavLink to="/categories">Categories</NavLink>
+        <NavLink to="/products">All Products</NavLink>
+        <NavLink to="/shoes">Shoes</NavLink>
         <Link to="/" className="logo">
           <img src={logo} alt="logo" />
         </Link>
-
+        <NavLink to="/men">Men</NavLink>
+        <NavLink to="/women">Women</NavLink>
         <NavLink to="/kids">Kids</NavLink>
-        <NavLink to="/shoes">Shoes</NavLink>
-        <NavLink to="/categories">Categories</NavLink>
         <Link to="/cart" className="nav-cart">
           <span>{cartItemNo}</span>
           <img src={cart} alt="" />

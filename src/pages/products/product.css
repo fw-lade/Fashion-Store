@@ -61,3 +61,7 @@
   font-weight: 600;
   color: #111111;
 }
+.noProductsFound h1 {
+  font-size: 18px;
+  font-weight: 600;
+}

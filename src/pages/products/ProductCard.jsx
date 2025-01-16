@@ -16,7 +16,12 @@ const ProductCard = ({ product, relevantCategory }) => {
               ? category.join(", ")
               : category}
           </h3>
-          <p>₦{price}</p>
+          <p>
+            {new Intl.NumberFormat("en-NG", {
+              style: "currency",
+              currency: "NGN",
+            }).format(price)}
+          </p>
         </div>
       </div>
     </>
