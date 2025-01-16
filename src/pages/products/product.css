@@ -54,7 +54,7 @@
   font-size: 16px;
   font-weight: 500;
   color: #808080;
-  text-transform: capitalize
+  text-transform: capitalize;
 }
 .product-text p {
   font-size: 15px;
@@ -66,12 +66,12 @@
   font-weight: 600;
 }
 
-.similar-grid{
+.similar-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
-.similar-products{
+.similar-products {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -79,12 +79,12 @@
   gap: 24px;
 }
 
-.product{
+.product {
   display: flex;
   align-items: start;
   gap: 42px;
 }
-.product-deets{
+.product-deets {
   padding: 24px 0;
   display: flex;
   flex-direction: column;

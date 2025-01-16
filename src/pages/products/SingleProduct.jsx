@@ -13,14 +13,15 @@ const SingleProduct = () => {
     (product) => product.id.toString() === productId
   );
 
-  const { id, name, price, image, category } = singleProduct[0] || {};
+  const { id, name, price, image, category, desc } = singleProduct[0] || {};
 
-  const similarProducts = products.filter(
-    (product) =>
-      product.category.includes(singleProduct[0].category) &&
-      product.id !== id
-  );
-  console.log(similarProducts);
+  // const similarProducts = products.filter(
+  //   (product) =>
+  //     product.category.includes(singleProduct[0].category) &&
+  //     product.id !== id
+  // );
+
+  const relatedProducts = products.slice(0,4) //ADD REMOVE CURRENT PRODUCT, ALSO TRY RANDOM PRODUCTS
 
   const dispatch = useDispatch();
 
@@ -34,15 +35,21 @@ const SingleProduct = () => {
         <img src={image} alt="" />
         <div className="product-deets">
           <h2>{name}</h2>
-          <p>{price}</p>
+          <p>{desc}</p>
+          <h3>
+            {new Intl.NumberFormat("en-NG", {
+              style: "currency",
+              currency: "NGN",
+            }).format(price)}
+          </h3>
           <button onClick={handleAddToCart}>Add to cart</button>
         </div>
       </div>
 
       <div className="similar-products">
-        <h3>Similar Products(category):</h3>
+        <h3>You might also like</h3>
         <div className="similar-grid">
-          {similarProducts.map((product, index) => (
+          {relatedProducts.map((product, index) => (
             <ProductCard product={product} key={index} />
           ))}
         </div>
