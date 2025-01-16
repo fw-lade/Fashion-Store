@@ -82,12 +82,44 @@
 .product {
   display: flex;
   align-items: start;
-  gap: 42px;
+  gap: 52px;
 }
 .product-deets {
-  padding: 24px 0;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 12px;
+}
+.product-deets h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111111;
+}
+.product-deets h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #808080;
+}
+.product-deets p {
+  font-size: 14px;
+  font-weight: 500;
+  width: 80%;
+  color: #808080;
+}
+.product-deets button {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: ease 0.3s;
+  padding: 8px 62px;
+  margin-top: 52px;
+}
+.product-deets button:hover {
+  border: 2px solid black;
+  background-color: #fff;
+  color: black;
 }

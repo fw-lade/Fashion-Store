@@ -21,7 +21,24 @@ const SingleProduct = () => {
   //     product.id !== id
   // );
 
-  const relatedProducts = products.slice(0,4) //ADD REMOVE CURRENT PRODUCT, ALSO TRY RANDOM PRODUCTS
+  const relatedProducts = products.slice(0,4) 
+
+
+  // NOTE!
+
+  // CHANGE PRODUCT ALREADY IN CART ALERT TO TOAST
+  // ADD REMOVE CURRENT PRODUCT, ALSO TRY RANDOM PRODUCTS
+  // MAKE TOAST SHOW FROM TOP_CENTER
+  // ADD MORE PRODUCTS
+  // ADD AOS
+  // ADD SPICE - SVG?
+  // HERO SECTION TEMPLATE BEFORE VID
+  // WORK ON HOME PAGE
+  // LOOK FOR VIDEOS FOR HOME PAGE
+  // LOOK FOR LOGO - CHECK CANVA
+  // FOOTER!!!!!!!!!!! -SOCIAL LINKS, COPYRIGHT, CONTACT ADMIN
+  // START RESPONSIVENESS
+
 
   const dispatch = useDispatch();
 
