@@ -14,6 +14,7 @@ import Women from "./pages/women/Women.jsx";
 import Kids from "./pages/kids/Kids.jsx";
 import Shoes from "./pages/shoes/Shoes.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import SingleProduct from "./pages/products/SingleProduct.jsx";
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
@@ -24,6 +25,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="*" element={<Error404 />} />
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductsPage />} />
+          <Route path="/product/:productId" element={<SingleProduct />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/men" element={<Men />} />
           <Route path="/women" element={<Women />} />

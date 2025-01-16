@@ -4,47 +4,54 @@ const cartSlice = createSlice({
   name: "carts",
   initialState: [],
   reducers: {
-    // add to cart
+    // Add to cart
     addToCart: (state, action) => {
       const existingProduct = state.find(
         (product) => product.productId === action.payload.id
       );
 
       if (existingProduct) {
-        alert("Product already added to cart.");
+        alert(`Product "${action.payload.name}" is already in the cart.`);
       } else {
         state.push({
-          id: Date.now(),
           ...action.payload,
-          productId: action.payload.id,
+          productId: action.payload.id, // Ensure consistency
           quantity: 1,
         });
       }
     },
 
-    // increase quantity
+    // Increase quantity
     increaseQuantity: (state, action) => {
-      const product = state.find((product) => product.id === action.payload);
+      const product = state.find(
+        (product) => product.productId === action.payload
+      );
       if (product) {
         product.quantity++;
       }
     },
 
-    // decrease quantity
+    // Decrease quantity
     decreaseQuantity: (state, action) => {
-      const product = state.find((product) => product.id === action.payload);
-      if (product) {
+      const product = state.find(
+        (product) => product.productId === action.payload
+      );
+      if (product && product.quantity > 1) {
         product.quantity--;
+      } else if (product && product.quantity === 1) {
+        // Remove product if quantity is 1
+        return state.filter((product) => product.productId !== action.payload);
       }
     },
 
-    // remove from cart
+    // Remove from cart
     removeFromCart: (state, action) => {
-      return state.filter((product) => product.id !== action.payload);
-    }
+      return state.filter((product) => product.productId !== action.payload);
+    },
   },
 });
 
-export const { addToCart, increaseQuantity, decreaseQuantity, removeFromCart } = cartSlice.actions;
+export const { addToCart, increaseQuantity, decreaseQuantity, removeFromCart } =
+  cartSlice.actions;
 
 export default cartSlice.reducer;

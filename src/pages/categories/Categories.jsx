@@ -1,6 +1,7 @@
 import React from "react";
 import "./categories.css";
 import { Link } from "react-router-dom";
+import shoes from "../../assets/images/shoe.webp";
 
 const Categories = () => {
   const categories = [
@@ -35,8 +36,7 @@ const Categories = () => {
     {
       name: "Shoes",
       path: "/shoes",
-      image:
-        "https://media.gq.com/photos/60d21a25ab6b8cc6e9d2c80a/4:3/w_4800,h_3600,c_limit/SNEAKER_GUIDE_OPENER.jpg",
+      image: shoes,
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam accusamus quisquam aut sequi rerum.",
     },
   ];
