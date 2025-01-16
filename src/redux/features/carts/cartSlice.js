@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { toast } from "react-toastify";
 
 const cartSlice = createSlice({
   name: "carts",
@@ -18,6 +19,7 @@ const cartSlice = createSlice({
           productId: action.payload.id, // Ensure consistency
           quantity: 1,
         });
+        toast.success("Added to cart.");
       }
     },
 

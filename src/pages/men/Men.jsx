@@ -6,7 +6,7 @@ import ProductCard from "../products/ProductCard";
 const Men = () => {
   const products = useSelector((state) => state.products);
   const menProducts = products.filter((product) =>
-    product.category.includes("men")
+    product.category.includes("men's")
   );
 
   const [sortOption, setSortOption] = useState("");
@@ -53,7 +53,7 @@ const Men = () => {
               <ProductCard
                 product={product}
                 key={index}
-                relevantCategory="men"
+                relevantCategory="men's"
               />
             ))
           ) : (

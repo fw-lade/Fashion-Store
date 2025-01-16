@@ -3,17 +3,21 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Nav from "./components/navbar/Nav";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
-    <div className="app-wrap">
-      {/* <Navbar /> */}
-      <Nav/>
-      <main className="page-wrapper">
-        <Outlet />
-      </main>
-      <Footer/>
-    </div>
+    <>
+      <ToastContainer />
+      <div className="app-wrap">
+        {/* <Navbar /> */}
+        <Nav />
+        <main className="page-wrapper">
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }
 

@@ -7,7 +7,7 @@ const initialState = [
     price: 30000,
     image:
       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/AIR+FORCE+1+%2707.png",
-    category: "men",
+    category: "men's",
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ const initialState = [
     price: 20000,
     image:
       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/465279d3-808d-47d7-b5d9-8dcb4e6f9155/W+KILLSHOT+2.png",
-    category: ["men", "shoes", "kids", "women"],
+    category: ["men's", "shoes", "kids", "women"],
   },
 ];
 
