@@ -1,18 +1,21 @@
 import React from "react";
-import ProductCard from "./ProductCard";
-import "./product.css";
+import "./men.css";
 import { useSelector } from "react-redux";
+import ProductCard from "../products/ProductCard";
 
-const ProductsPage = () => {
+const Men = () => {
   const products = useSelector((state) => state.products);
+  const menProducts = products.filter(
+    (product) => product.category.includes("men")
+  );
 
   return (
     <>
       <div className="productsPages-wrapper">
         <div className="header">
-          <h1>All Products</h1>
+          <h1>All Men</h1>
           <div className="title-sort">
-            <h2>Products({products.length})</h2>
+            <h2>Men({menProducts.length})</h2>
             <div className="sort">
               <select name="" id="">
                 <option value="">Sort by:</option>
@@ -24,10 +27,16 @@ const ProductsPage = () => {
           </div>
         </div>
         <div className="products-grid">
-          {products.length > 0 ? (
-            products.map((product, index) => (
-              <ProductCard product={product} key={index} />
-            ))
+          {menProducts.length > 0 ? (
+            menProducts
+              .filter((product) => product.category.includes("men"))
+              .map((product, index) => (
+                <ProductCard
+                  product={product}
+                  key={index}
+                  relevantCategory="men"
+                />
+              ))
           ) : (
             <h1>No Products found.</h1>
           )}
@@ -37,4 +46,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default Men;

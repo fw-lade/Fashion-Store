@@ -1,0 +1,31 @@
+.category-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+.category{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 12px 24px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.category h3{
+    font-size: 24px;
+  font-weight: 500;
+  color: #ffff;
+}
+.category p{
+    font-size: 12px;
+  font-weight: 400;
+  color: #cacacb;
+  width: 70%;
+}
+.category:hover .category-text{
+    transform: translateY(-50px);
+    transition: ease-in .3s all;
+}

@@ -1,5 +1,4 @@
-.products-wrapper {
-  padding: 42px 100px;
+.productsPages-wrapper {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -20,7 +19,45 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .title-sort h2 {
   font-size: 16px;
   font-weight: 500;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+  cursor: pointer;
+}
+.product-card img {
+  width: 100%;
+}
+.product-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2px;
+}
+.product-text h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+}
+.product-text h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #808080;
+  text-transform: capitalize
+}
+.product-text p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
 }

@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import logo from "../../assets/images/nike.svg";
 import logoo from "../../assets/images/jays.svg";
 
-const Navbar = () => {
+const Nav = () => {
   const carts = useSelector((state) => state.carts);
   const cartItemNo = carts.reduce(
     (total, product) => total + product.quantity,
@@ -15,18 +15,17 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="nav">
+        <NavLink to="/products">Products</NavLink>
+        <NavLink to="/men">Men</NavLink>
+        <NavLink to="/women">Women</NavLink>
         <Link to="/" className="logo">
-          <img src={logoo} alt="logo" />
+          <img src={logo} alt="logo" />
         </Link>
-        <div className="navlinks">
-          <NavLink to="/products">Products</NavLink>
-          <NavLink to="/men">Men</NavLink>
-          <NavLink to="/women">Women</NavLink>
-          <NavLink to="/kids">Kids</NavLink>
-          <NavLink to="/shoes">Shoes</NavLink>
-          <NavLink to="/categories">Categories</NavLink>
-        </div>
+
+        <NavLink to="/kids">Kids</NavLink>
+        <NavLink to="/shoes">Shoes</NavLink>
+        <NavLink to="/categories">Categories</NavLink>
         <Link to="/cart" className="nav-cart">
           <span>{cartItemNo}</span>
           <img src={cart} alt="" />
@@ -36,4 +35,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Nav;

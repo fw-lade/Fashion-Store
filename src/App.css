@@ -16,3 +16,9 @@ html {
 a {
   text-decoration: none;
 }
+.app-wrap {
+  background-color: #fff;
+}
+.page-wrapper {
+  padding: 42px 100px;
+}

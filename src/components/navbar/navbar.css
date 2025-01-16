@@ -1,9 +1,10 @@
 .navbar {
-  padding: 12px 100px;
+  padding: 0px 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 18px 40px 0px rgba(112, 144, 176, 0.12);
+  background-color: #fff;
 }
 .navlinks {
   display: flex;
@@ -46,4 +47,33 @@
   position: absolute;
   transform: translateX(-50%, -50%);
   top: 15px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 18px 40px 0px rgba(112, 144, 176, 0.12);
+  background-color: #fff;
+  gap: 24px;
+  padding: 0px 100px;
+  position: relative;
+}
+.nav .nav-cart {
+  position: absolute;
+  right: 100px;
+}
+.nav a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+  padding: 0 10px;
+  transition: 0.3s ease all;
+}
+.nav a:hover {
+  border-bottom: #111111 2px solid;
+  transform: translateY(-5px);
+}
+.logo img {
+  width: 100px;
 }
