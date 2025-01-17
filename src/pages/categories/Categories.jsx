@@ -51,6 +51,8 @@ const Categories = () => {
             style={{
               background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("${category.image}")`,
             }}
+            data-aos="zoom-in"
+            data-aos-duration="1000"
           >
             <div className="category-text">
               <h3>{category.name}</h3>

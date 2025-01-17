@@ -12,14 +12,18 @@ const cartSlice = createSlice({
       );
 
       if (existingProduct) {
-        alert(`Product "${action.payload.name}" is already in the cart.`);
+        toast(`"${action.payload.name}" already exists in cart.`, {
+          className: "custom-toast",
+        });
       } else {
         state.push({
           ...action.payload,
           productId: action.payload.id, // Ensure consistency
           quantity: 1,
         });
-        toast.success("Added to cart.");
+        toast("Added to cart.", {
+          className: "custom-toast",
+        });
       }
     },
 
@@ -48,6 +52,14 @@ const cartSlice = createSlice({
 
     // Remove from cart
     removeFromCart: (state, action) => {
+      const product = state.find(
+        (product) => product.productId === action.payload
+      );
+      if (product) {
+        toast(`${product.name} removed from cart.`, {
+          className: "custom-toast",
+        });
+      }
       return state.filter((product) => product.productId !== action.payload);
     },
   },

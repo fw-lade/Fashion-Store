@@ -22,4 +22,9 @@ a {
 .page-wrapper {
   padding: 42px 100px;
 }
-
+.custom-toast{
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Poppins !important;
+  color: black !important;
+}

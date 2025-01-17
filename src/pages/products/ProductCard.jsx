@@ -6,7 +6,12 @@ const ProductCard = ({ product, relevantCategory }) => {
   // const splitCategory = category.join(", ")
   return (
     <>
-      <Link to={`/product/${id}`} className="product-card">
+      <Link
+        to={`/product/${id}`}
+        className="product-card"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
         <img src={image} alt="" />
         <div className="product-text">
           <h2>{name}</h2>

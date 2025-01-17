@@ -21,16 +21,14 @@ const SingleProduct = () => {
   //     product.id !== id
   // );
 
-  const relatedProducts = products.slice(0,4) 
-
+  const relatedProducts = products
+    .filter((product) => product.id !== id) // Exclude the current product
+    .sort(() => Math.random() - 0.5) // Shuffle the products randomly
+    .slice(0, 4); // Pick the first 4 products after shuffling
 
   // NOTE!
 
-  // CHANGE PRODUCT ALREADY IN CART ALERT TO TOAST
-  // ADD REMOVE CURRENT PRODUCT, ALSO TRY RANDOM PRODUCTS
-  // MAKE TOAST SHOW FROM TOP_CENTER
   // ADD MORE PRODUCTS
-  // ADD AOS
   // ADD SPICE - SVG?
   // HERO SECTION TEMPLATE BEFORE VID
   // WORK ON HOME PAGE
@@ -38,7 +36,6 @@ const SingleProduct = () => {
   // LOOK FOR LOGO - CHECK CANVA
   // FOOTER!!!!!!!!!!! -SOCIAL LINKS, COPYRIGHT, CONTACT ADMIN
   // START RESPONSIVENESS
-
 
   const dispatch = useDispatch();
 
