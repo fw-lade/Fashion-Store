@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ProductCard from "./ProductCard";
 import "./product.css";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { HiOutlineSlash } from "react-icons/hi2";
 
 const ProductsPage = () => {
   const products = useSelector((state) => state.products);
@@ -26,7 +28,14 @@ const ProductsPage = () => {
       <div className="header">
         <h1>All Products</h1>
         <div className="title-sort">
-          <h2>Products({products.length})</h2>
+          <div>
+            <div className="bread-wrap">
+              <Link to="/categories">Categories</Link>
+              <HiOutlineSlash className="slash" />
+              <span>All Products</span>
+            </div>
+            <h2>All Products({products.length})</h2>
+          </div>
           <div className="sort">
             <select
               name="sort"

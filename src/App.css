@@ -28,3 +28,20 @@ a {
   font-family: Poppins !important;
   color: black !important;
 }
+.bread-wrap{
+  display: flex;
+  /* gap:2px; */
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: black;
+  padding-bottom: 12px;
+}
+.bread-wrap a{
+  color: black;
+  border-bottom: 2px solid black;
+}
+.slash{
+  font-size: 16px;
+  font-weight: 600;
+}

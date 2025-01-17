@@ -13,21 +13,21 @@ const Categories = () => {
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam accusamus quisquam aut sequi rerum.",
     },
     {
-      name: "Men's Fashion",
+      name: "Men's Clothing",
       path: "/men",
       image:
         "https://img.freepik.com/premium-photo/collection-men-s-clothing-including-jacket-pants-hat_793585-43.jpg",
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam accusamus quisquam aut sequi rerum.",
     },
     {
-      name: "Women's Fashion",
+      name: "Women's Clothing",
       path: "/women",
       image:
         "https://media.istockphoto.com/id/155596905/photo/high-class-female-clothing.jpg?s=612x612&w=0&k=20&c=V1HcqglhOc76MHidrmyPjraiMNXwhAzO-wMHbEMMEqM=",
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam accusamus quisquam aut sequi rerum.",
     },
     {
-      name: "Kids Fashion",
+      name: "Kids Clothing",
       path: "/kids",
       image:
         "https://cdn.shopify.com/s/files/1/1246/6441/files/Untitled_design_8af3cdf7-fe22-40bb-abcf-eee4af9f8b23.png?11412696917662623327",

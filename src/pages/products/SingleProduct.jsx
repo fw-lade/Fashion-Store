@@ -26,17 +26,6 @@ const SingleProduct = () => {
     .sort(() => Math.random() - 0.5) // Shuffle the products randomly
     .slice(0, 4); // Pick the first 4 products after shuffling
 
-  // NOTE!
-
-  // ADD MORE PRODUCTS
-  // ADD SPICE - SVG?
-  // HERO SECTION TEMPLATE BEFORE VID
-  // WORK ON HOME PAGE
-  // LOOK FOR VIDEOS FOR HOME PAGE
-  // LOOK FOR LOGO - CHECK CANVA
-  // FOOTER!!!!!!!!!!! -SOCIAL LINKS, COPYRIGHT, CONTACT ADMIN
-  // START RESPONSIVENESS
-
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {

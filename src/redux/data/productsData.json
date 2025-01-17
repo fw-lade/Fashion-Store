@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Airforce 1 '07",
+    "price": 30000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/AIR+FORCE+1+%2707.png",
+    "category": "shoes",
+    "desc": "Step into timeless style with the Nike Airforce 1 '07. This iconic sneaker combines premium materials with unbeatable comfort for everyday wear."
+  },
+  {
+    "id": 2,
+    "name": "Air Jordan 1 Mid",
+    "price": 15000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9921d678-ed65-49c6-bdcb-e85bebeb7c46/AIR+JORDAN+1+MID.png",
+    "category": "shoes",
+    "desc": "Elevate your sneaker game with the Air Jordan 1 Mid. Perfect for sports or casual outings, its bold design ensures you stand out."
+  },
+  {
+    "id": 3,
+    "name": "Air Jordan 1 Low",
+    "price": 50000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/89b1d290-5e2a-44a5-a260-2e9d628ca670/WMNS+AIR+JORDAN+1+LOW.png",
+    "category": "shoes",
+    "desc": "Classic meets modern in the Air Jordan 1 Low. Featuring a sleek silhouette, it's designed for versatility and all-day comfort."
+  },
+  {
+    "id": 4,
+    "name": "Nike React Vision",
+    "price": 190000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b3897a0e-564d-44b3-9438-f05761af98e2/NIKE+REACT+VISION+GS.png",
+    "category": "shoes",
+    "desc": "Experience cutting-edge comfort with the Nike React Vision. Its innovative design and responsive cushioning make it ideal for active lifestyles."
+  },
+  {
+    "id": 5,
+    "name": "Nike Alphafly 3",
+    "price": 180000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/99265b63-c256-4c7d-ba49-5916a805e699/W+AIR+ZOOM+ALPHAFLY+NEXT%25+3.png",
+    "category": "shoes",
+    "desc": "Push your limits with the Nike Alphafly 3. Engineered for speed and performance, it's the ultimate choice for runners aiming for their best."
+  },
+  {
+    "id": 6,
+    "name": "Nike Killshot 2",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/465279d3-808d-47d7-b5d9-8dcb4e6f9155/W+KILLSHOT+2.png",
+    "category": ["shoes", "kids"],
+    "desc": "Retro vibes meet modern comfort in the Nike Killshot 2. Its minimalist design makes it a versatile addition to any wardrobe."
+  },
+  {
+    "id": 7,
+    "name": "Nike SB - Men's El Jeano Skate Trousers",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/761180bc-01bb-4a2a-8953-b6082d691342/M+NK+SB+EL+JEANO+PANT+O+AGN.png",
+    "category": "men's",
+    "desc": "Designed for style and function, the Nike SB El Jeano Skate Trousers are perfect for casual wear and skateboarding sessions alike."
+  },
+  {
+    "id": 8,
+    "name": "Jordan x UNDEFEATED Hoodie",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7f2279b8-8187-4ac6-b842-cf41479bce2f/M+J+UNDFTD+HOODIE+2.png",
+    "category": "men's",
+    "desc": "Stay cozy and stylish with the Jordan x UNDEFEATED Hoodie. A perfect blend of comfort and urban fashion for everyday wear."
+  },
+  {
+    "id": 9,
+    "name": "Paris Saint-Germain Strike",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/44283bb2-501a-45f6-bb80-dd06650471cd/PSG+M+NK+DF+STRK+ANTHM+JKT.png",
+    "category": "men's",
+    "desc": "Show your team pride with the Paris Saint-Germain Strike jacket. Combining style and performance, it's a must-have for fans."
+  },
+  {
+    "id": 10,
+    "name": "NikeCourt Slam",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6f68e5cc-8ec2-4798-8f10-121a5c68840f/M+NKCT+DFADV+SLM+ULT+POLO+LN.png",
+    "category": "men's",
+    "desc": "Ace your style game with the NikeCourt Slam polo. Perfect for tennis enthusiasts or casual wear with a sporty twist."
+  },
+  {
+    "id": 11,
+    "name": "Nike Life Men's Carpenter Trousers",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/46abb6bb-dd85-4e95-aa96-f2cfc7adcfbc/M+NL+CARPENTER+PANT.png",
+    "category": "men's",
+    "desc": "Upgrade your wardrobe with the Nike Life Carpenter Trousers. Rugged yet stylish, they're built for comfort and durability."
+  },
+  {
+    "id": 12,
+    "name": "Nike ACG Dri-FIT UV 'Devastation Trail'",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6582dd8d-59ca-4005-b453-cf155b91629f/M+ACG+DF+UV+DEV+TRAIL+TOP.png",
+    "category": "men's",
+    "desc": "Take on the outdoors with the Nike ACG Dri-FIT UV 'Devastation Trail'. Lightweight and protective, it's designed for adventure."
+  },
+  {
+    "id": 13,
+    "name": "Nike Pro Sculpt",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e4df8829-ae87-47af-bdd4-50e26e6592a6/W+NP+SCULPT+DF+HR+3IN+SHORT.png",
+    "category": "women",
+    "desc": "Enhance your workout experience with the Nike Pro Sculpt shorts. With a snug fit and modern design, they're perfect for active lifestyles."
+  },
+  {
+    "id": 14,
+    "name": "Nike Windrunner",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/45f6a667-82f8-4da6-bf50-4776bc5fecaa/W+NSW+NK+WR+WVN+HR+OH+PANT.png",
+    "category": "women",
+    "desc": "Stay ahead of the wind with the Nike Windrunner pants. Lightweight and versatile, they pair perfectly with any activewear."
+  },
+  {
+    "id": 15,
+    "name": "Nike Sportswear Tech Fleece Windrunner",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d4847995-4174-47e6-9535-26694b30c482/W+NSW+TCH+FLC+WR+FZ+HDY+2.png",
+    "category": "women",
+    "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. A eveniet inventore ratione repudiandae repellat corrupti nobis explicabo odio. Quisquam, fugiat."
+  },
+  {
+    "id": 16,
+    "name": "Air Jordan - Women's Knit Dress",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d9e40d0d-6c0a-446f-b359-2eef2139d667/W+J+AIR+JRD+KNIT+DRESS.png",
+    "category": "women",
+    "desc": "Stay stylish and comfortable with the Air Jordan Women's Knit Dress, perfect for casual outings and weekend looks."
+  },
+  {
+    "id": 17,
+    "name": "Jordan Women's Varsity Jacket",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/141b2636-a6c8-4cf2-8aec-c8281841adab/W+J+VARSITY+JKT+SSNL+C.png",
+    "category": "women",
+    "desc": "This Jordan Varsity Jacket adds a touch of sporty elegance to your wardrobe, with premium materials for ultimate comfort."
+  },
+  {
+    "id": 18,
+    "name": "Nike Women's Oversized Bomber Jacket",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/71575aa5-0be0-47cc-8ecb-53eea29c4e33/W+NSW+ESSNTL+OS+BOMBER.png",
+    "category": "women",
+    "desc": "The Nike Women's Oversized Bomber Jacket delivers an effortlessly cool vibe while keeping you warm and cozy."
+  },
+  {
+    "id": 19,
+    "name": "Nike Sportwear",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b313e120-fd2b-490c-af08-a70848640f18/K+NSW+TRACKSUIT+POLY+FZ+HBR.png",
+    "category": "kids",
+    "desc": "Designed for active kids, this Nike Sportswear tracksuit ensures comfort and style for playtime and beyond."
+  },
+  {
+    "id": 20,
+    "name": "Nike Air",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c32c5354-9323-4bdb-8d8c-962b948229af/DNU+K+NK+AIR+TEE.png",
+    "category": "kids",
+    "desc": "The Nike Air tee offers breathable fabric and a trendy design, perfect for keeping kids cool during activities."
+  },
+  {
+    "id": 21,
+    "name": "Nike Academy Football TrackSuit",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/06b4d1e8-e3c9-40bd-bdcb-b5a47981df8b/K+NK+DF+ACD%2B+TRACK+JKT+-PD.png",
+    "category": "kids",
+    "desc": "Step up their game with the Nike Academy Football Tracksuit, built for performance and style on and off the pitch."
+  },
+  {
+    "id": 22,
+    "name": "Nike Sportwear",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ea50c13b-69be-4320-8c90-5f98a0699374/G+NSW+LTWT+OVRSZD+JKT+STY+STAR.png",
+    "category": "kids",
+    "desc": "This lightweight Nike Sportswear jacket adds flair and functionality, perfect for any weather."
+  },
+  {
+    "id": 23,
+    "name": "Paris Saint-Germain Tech Fleece",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9bf93bbe-1a6d-4431-886a-1c7b9f465fd8/PSG+B+NSW+TECH+FLC+FZ+GX.png",
+    "category": "kids",
+    "desc": "Show your team spirit with the Paris Saint-Germain Tech Fleece, combining warmth and sleek design."
+  },
+  {
+    "id": 24,
+    "name": "Chelsea F.C 2024/25 Stadium Home",
+    "price": 20000,
+    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8980a7d0-e4a4-40e7-81cb-cd6d7b32769f/CFC+Y+NK+DF+JSY+SS+STAD+HM.png",
+    "category": "kids",
+    "desc": "Gear up for the season with the Chelsea F.C. 2024/25 Stadium Home Jersey, a must-have for young fans."
+  }
+]

@@ -1,0 +1,12 @@
+.sim-phome{
+    padding: 42px 0;
+}
+.home-categories{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.home-categories h2{
+    font-size: 26px;
+    font-weight: 600;
+}
