@@ -20,7 +20,7 @@ const Navbar = () => {
           <img src={logoo} alt="logo" />
         </Link>
         <div className="navlinks">
-          <NavLink to="/products">Products</NavLink>
+          <NavLink to="/products">All Products</NavLink>
           <NavLink to="/men">Men</NavLink>
           <NavLink to="/women">Women</NavLink>
           <NavLink to="/kids">Kids</NavLink>
