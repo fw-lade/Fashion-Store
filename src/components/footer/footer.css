@@ -11,11 +11,16 @@
   justify-content: space-between;
   align-items: start;
 }
-.copyright p {
+.copyright p,
+.copyright a {
   font-size: 14px;
   font-weight: 600;
   text-align: center;
   color: black;
+  transition: ease 0.3s;
+}
+.copyright p a{
+  border-bottom: 2px solid black;
 }
 .footer-links {
   display: flex;
@@ -29,8 +34,8 @@
   gap: 24px;
 }
 .footer-links h3 {
-    font-size: 24px;
-    font-weight: 600;
+  font-size: 24px;
+  font-weight: 600;
 }
 .footer-links a {
   font-size: 14px;
@@ -42,4 +47,25 @@
   color: black;
   border-bottom: 1px solid black;
   transform: translateY(-5px);
+}
+.social-links {
+  display: flex;
+  gap: 12px;
+  justify-content: end;
+}
+.social-links a {
+  font-size: 20px;
+  color: black;
+  border: 2px solid black;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+.social-links a:hover {
+  transform: translateY(-10px);
 }

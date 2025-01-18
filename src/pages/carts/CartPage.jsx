@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./cart.css";
 import CartItem from "./CartItem";
 import Billing from "./Billing";
+import AlsoLike from "../../components/explore/AlsoLike";
 
 const CartPage = () => {
   const carts = useSelector((state) => state.carts);
@@ -31,6 +32,7 @@ const CartPage = () => {
           <Billing />
         </div>
       </div>
+      <AlsoLike/>
     </>
   );
 };

@@ -1,6 +1,8 @@
-import React from 'react'
-import './footer.css'
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./footer.css";
+import { Link } from "react-router-dom";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -18,14 +20,34 @@ const Footer = () => {
               <Link to="/shoes">Shoes</Link>
             </div>
           </div>
-          <div className="social-links"></div>
+          <div className="social-links">
+            <a href="" target="_blank">
+              <FaWhatsapp />
+            </a>
+            <a href="" target="_blank">
+              <FaInstagram />
+            </a>
+            <a href="" target="_blank">
+              <FaXTwitter />
+            </a>
+          </div>
         </div>
         <div className="copyright">
-          <p>© 2025 ololade. All rights reserved</p>
+          <p>
+            © {new Date().getFullYear()}{" "}
+            <a
+              href="http://ololade.pages.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ololade.
+            </a>{" "}
+            All rights reserved
+          </p>
         </div>
       </footer>
     </>
   );
-}
+};
 
-export default Footer
+export default Footer;
