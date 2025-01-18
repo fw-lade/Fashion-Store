@@ -1,5 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Billing = () => {
   const carts = useSelector((state) => state.carts);
@@ -12,6 +14,18 @@ const Billing = () => {
   const tax = subTotal * 0.1;
 
   const totalBillings = subTotal + tax;
+
+  const navigate = useNavigate();
+
+  const handlebilling = () => {
+    if(totalBillings > 0){
+      navigate("/billing");
+    }else{
+      toast('cart is empty', {
+        className: 'custom-toast'
+      })
+    }
+  };
 
   return (
     <div className="bill-wrap">
@@ -42,7 +56,9 @@ const Billing = () => {
           }).format(totalBillings)}
         </p>
       </div>
-      <button className="checkout">Proceed to Checkout</button>
+      <button onClick={handlebilling} className="checkout">
+        Proceed to Checkout
+      </button>
     </div>
   );
 };
