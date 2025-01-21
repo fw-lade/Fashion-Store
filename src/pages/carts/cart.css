@@ -150,3 +150,21 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+  .cartPage-wrapper{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .remove-item{
+    right: 0;
+  }
+  .cart-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .text-btns{
+    gap: 4px;
+  }
+}

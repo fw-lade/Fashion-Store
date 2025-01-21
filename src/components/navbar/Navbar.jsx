@@ -20,12 +20,12 @@ const Navbar = () => {
           <img src={logoo} alt="logo" />
         </Link>
         <div className="navlinks">
-          <NavLink to="/products">All Products</NavLink>
-          <NavLink to="/men">Men</NavLink>
-          <NavLink to="/women">Women</NavLink>
-          <NavLink to="/kids">Kids</NavLink>
-          <NavLink to="/shoes">Shoes</NavLink>
-          <NavLink to="/categories">Categories</NavLink>
+          <NavLink className='nav-link' to="/products">All Products</NavLink>
+          <NavLink className='nav-link' to="/men">Men</NavLink>
+          <NavLink className='nav-link' to="/women">Women</NavLink>
+          <NavLink className='nav-link' to="/kids">Kids</NavLink>
+          <NavLink className='nav-link' to="/shoes">Shoes</NavLink>
+          <NavLink className='nav-link' to="/categories">Categories</NavLink>
         </div>
         <Link to="/cart" className="nav-cart">
           <span>{cartItemNo}</span>

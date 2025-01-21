@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 import cart from "../../assets/images/cart.svg";
 import { useSelector } from "react-redux";
 import logo from "../../assets/images/nike.svg";
 import logoo from "../../assets/images/jays.svg";
+import { MdMenu } from "react-icons/md";
+import { IoClose } from "react-icons/io5";
 
 const Nav = () => {
   const carts = useSelector((state) => state.carts);
@@ -13,22 +15,64 @@ const Nav = () => {
     0
   );
 
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+      setIsSidebarOpen(!isSidebarOpen);
+    };
+
   return (
     <>
       <nav className="nav">
-        <NavLink to="/categories">Categories</NavLink>
-        <NavLink to="/products">All Products</NavLink>
-        <NavLink to="/shoes">Shoes</NavLink>
+        <NavLink className="nav-link" to="/categories">
+          Categories
+        </NavLink>
+        <NavLink className="nav-link" to="/products">
+          All Products
+        </NavLink>
+        <NavLink className="nav-link" to="/shoes">
+          Shoes
+        </NavLink>
         <Link to="/" className="logo">
           <img src={logo} alt="logo" />
         </Link>
-        <NavLink to="/men">Men</NavLink>
-        <NavLink to="/women">Women</NavLink>
-        <NavLink to="/kids">Kids</NavLink>
-        <Link to="/cart" className="nav-cart">
-          <span>{cartItemNo}</span>
-          <img src={cart} alt="" />
-        </Link>
+        <NavLink className="nav-link" to="/men">
+          Men
+        </NavLink>
+        <NavLink className="nav-link" to="/women">
+          Women
+        </NavLink>
+        <NavLink className="nav-link" to="/kids">
+          Kids
+        </NavLink>
+        <div className="nav-menu">
+          <Link to="/cart" className="nav-cart">
+            <span>{cartItemNo}</span>
+            <img src={cart} alt="" />
+          </Link>
+          <div className="menu" onClick={toggleSidebar}>
+            MENU <MdMenu />
+          </div>
+        </div>
+      </nav>
+
+      {/* Sidebar overlay */}
+      <div
+        className={`overlay ${isSidebarOpen ? "active" : ""}`}
+        onClick={toggleSidebar}
+      ></div>
+
+      {/* Sidebar menu */}
+      <nav className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
+        <IoClose className="close-icon" onClick={toggleSidebar} />
+        <nav className="sidebar-links">
+          <NavLink to="/products" onClick={toggleSidebar}>All Products</NavLink>
+          <NavLink to="/men" onClick={toggleSidebar}>Men</NavLink>
+          <NavLink to="/women" onClick={toggleSidebar}>Women</NavLink>
+          <NavLink to="/kids" onClick={toggleSidebar}>Kids</NavLink>
+          <NavLink to="/shoes" onClick={toggleSidebar}>Shoes</NavLink>
+          <NavLink to="/categories" onClick={toggleSidebar}>Categories</NavLink>
+        </nav>
       </nav>
     </>
   );

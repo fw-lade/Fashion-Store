@@ -123,3 +123,12 @@
   background-color: #fff;
   color: black;
 }
+
+
+
+@media screen and (max-width: 900px) {
+  .similar-grid, .products-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}

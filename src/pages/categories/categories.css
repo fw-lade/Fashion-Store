@@ -29,3 +29,9 @@
     transform: translateY(-50px);
     transition: ease-in .3s all;
 }
+
+@media screen and (max-width: 900px) {
+  .category-wrap{
+    grid-template-columns: 1fr;
+  }
+}
