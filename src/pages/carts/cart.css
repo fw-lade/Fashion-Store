@@ -168,3 +168,17 @@
     gap: 4px;
   }
 }
+@media screen and (max-width: 600px) {
+  .cart{
+    gap: 18px;
+  }
+  .cart img{
+    width: 130px;
+  }
+  .cart-text h1{
+    font-size: 16px;
+  }
+  .cart-text p{
+    font-size: 12px;
+  }
+}

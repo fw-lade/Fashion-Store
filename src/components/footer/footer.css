@@ -69,3 +69,17 @@
 .social-links a:hover {
   transform: translateY(-10px);
 }
+
+
+@media screen and (max-width: 600px) {
+.footer{
+  padding: 42px 20px;
+}
+.links-wrap{
+  flex-direction: column;
+  gap: 24px;
+}
+.footer-links div{
+  gap: 12px;
+}
+}

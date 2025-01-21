@@ -17,7 +17,7 @@
 .title-sort {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .title-sort h2 {
@@ -124,11 +124,36 @@
   color: black;
 }
 
-
-
 @media screen and (max-width: 900px) {
-  .similar-grid, .products-grid{
+  .similar-grid,
+  .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+  .product{
+    flex-direction: column;
+    gap: 24px;
+  }
+  .product img{
+    width: 100%;
+  }
+  .product-deets{
+    padding: 0;
+    
+  }
+  .product-deets button{
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-text h2 {
+  font-size: 14px;
+}
+.product-text h3 {
+  font-size: 12px;
+}
+.product-text p {
+  font-size: 14px;
+}
+
 }
