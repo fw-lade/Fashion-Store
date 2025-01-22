@@ -168,8 +168,8 @@
     display: flex;
   }
 }
-@media screen and (max-width: 900px) {
-  .nav{
+@media screen and (max-width: 600px) {
+  .nav, .navbar{
     padding: 0px 20px;
   }
   .nav .nav-cart{

@@ -72,6 +72,7 @@ const Nav = () => {
           <NavLink to="/kids" onClick={toggleSidebar}>Kids</NavLink>
           <NavLink to="/shoes" onClick={toggleSidebar}>Shoes</NavLink>
           <NavLink to="/categories" onClick={toggleSidebar}>Categories</NavLink>
+          <NavLink to="/contact">Contact Us</NavLink>
         </nav>
       </nav>
     </>

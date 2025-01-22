@@ -16,6 +16,7 @@ import Shoes from "./pages/shoes/Shoes.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import SingleProduct from "./pages/products/SingleProduct.jsx";
 import BillingPage from "./pages/billing/BillingPage.jsx";
+import Contact from "./pages/contact/Contact.jsx";
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
@@ -34,6 +35,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/shoes" element={<Shoes />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/billing" element={<BillingPage />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
