@@ -9,15 +9,17 @@ const HeroSection = () => {
         text="Welcome to our STORE!"
         style={{ fontSize: "54px" }}
       />
+      <br />
       {/* Example 2: Customized speed and characters */}
       <DecryptedText
-        text="Customize me"
+        text="Experimenting..."
         speed={100}
         maxIterations={20}
         characters="ABCD1234!?"
         className="revealed"
         parentClassName="all-letters"
         encryptedClassName="encrypted"
+        style={{ fontSize: "32px" }}
       />
       {/* Example 3: Animate on view (runs once) */}
       <div style={{ marginTop: "4rem" }}>
@@ -28,8 +30,6 @@ const HeroSection = () => {
           style={{ fontSize: "54px" }}
         />
       </div>
-
-
     </div>
   );
 }
