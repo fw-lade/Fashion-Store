@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection";
 import "./home.css";
 import { useSelector } from "react-redux";
 import AlsoLike from "../../components/explore/AlsoLike";
-import TrueFocus from "../../components/TrueFocus";
+import TrueFocus from "../../components/animated-texts/TrueFocus";
 
 const Home = () => {
   const products = useSelector((state) => state.products);

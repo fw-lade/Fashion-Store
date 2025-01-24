@@ -1,5 +1,5 @@
 import React from 'react'
-import DecryptedText from '../../components/DecryptedText'
+import DecryptedText from '../../components/animated-texts/DecryptedText'
 
 const HeroSection = () => {
   return (
