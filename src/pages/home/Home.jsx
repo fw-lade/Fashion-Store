@@ -5,9 +5,16 @@ import "./home.css";
 import { useSelector } from "react-redux";
 import AlsoLike from "../../components/explore/AlsoLike";
 import TrueFocus from "../../components/animated-texts/TrueFocus";
+import axios from "axios";
 
 const Home = () => {
   const products = useSelector((state) => state.products);
+
+  const fetchUser = async () => {
+    const response = await axios.get("http://localhost:3000/users");
+    console.log(response)
+  }
+  fetchUser()
 
   return (
     <>
