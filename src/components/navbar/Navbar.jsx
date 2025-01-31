@@ -55,6 +55,12 @@ const Navbar = () => {
           <div className="menu" onClick={toggleSidebar}>
             MENU <MdMenu />
           </div>
+          <SignedOut>
+            <SignInButton className="signnin" mode="modal" />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
       </nav>
       {/* Sidebar overlay */}

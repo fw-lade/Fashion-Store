@@ -7,6 +7,12 @@ import logo from "../../assets/images/nike.svg";
 import logoo from "../../assets/images/jays.svg";
 import { MdMenu } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 
 const Nav = () => {
   const carts = useSelector((state) => state.carts);
@@ -53,6 +59,12 @@ const Nav = () => {
           <div className="menu" onClick={toggleSidebar}>
             MENU <MdMenu />
           </div>
+          <SignedOut>
+            <SignInButton className='signnin' mode="modal" />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
       </nav>
 
@@ -66,12 +78,24 @@ const Nav = () => {
       <nav className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
         <IoClose className="close-icon" onClick={toggleSidebar} />
         <nav className="sidebar-links">
-          <NavLink to="/products" onClick={toggleSidebar}>All Products</NavLink>
-          <NavLink to="/men" onClick={toggleSidebar}>Men</NavLink>
-          <NavLink to="/women" onClick={toggleSidebar}>Women</NavLink>
-          <NavLink to="/kids" onClick={toggleSidebar}>Kids</NavLink>
-          <NavLink to="/shoes" onClick={toggleSidebar}>Shoes</NavLink>
-          <NavLink to="/categories" onClick={toggleSidebar}>Categories</NavLink>
+          <NavLink to="/products" onClick={toggleSidebar}>
+            All Products
+          </NavLink>
+          <NavLink to="/men" onClick={toggleSidebar}>
+            Men
+          </NavLink>
+          <NavLink to="/women" onClick={toggleSidebar}>
+            Women
+          </NavLink>
+          <NavLink to="/kids" onClick={toggleSidebar}>
+            Kids
+          </NavLink>
+          <NavLink to="/shoes" onClick={toggleSidebar}>
+            Shoes
+          </NavLink>
+          <NavLink to="/categories" onClick={toggleSidebar}>
+            Categories
+          </NavLink>
           <NavLink to="/contact">Contact Us</NavLink>
         </nav>
       </nav>

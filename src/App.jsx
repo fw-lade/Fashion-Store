@@ -25,8 +25,8 @@ function App() {
         theme="light" // Light theme
       />
       <div className="app-wrap">
-        {/* <Navbar /> */}
-        <Nav />
+        <Navbar />
+        {/* <Nav /> */}
         <main className="page-wrapper">
           <Outlet />
         </main>

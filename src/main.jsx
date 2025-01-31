@@ -17,27 +17,37 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 import SingleProduct from "./pages/products/SingleProduct.jsx";
 import BillingPage from "./pages/billing/BillingPage.jsx";
 import Contact from "./pages/contact/Contact.jsx";
+import { ClerkProvider } from "@clerk/clerk-react";
+
+// Import your Publishable Key
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+
+if (!PUBLISHABLE_KEY) {
+  throw new Error("Missing Publishable Key");
+}
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route element={<App />}>
-          <Route path="*" element={<Error404 />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<ProductsPage />} />
-          <Route path="/product/:productId" element={<SingleProduct />} />
-          <Route path="/categories" element={<Categories />} />
-          <Route path="/men" element={<Men />} />
-          <Route path="/women" element={<Women />} />
-          <Route path="/kids" element={<Kids />} />
-          <Route path="/shoes" element={<Shoes />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/billing" element={<BillingPage />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route element={<App />}>
+            <Route path="*" element={<Error404 />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/product/:productId" element={<SingleProduct />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/men" element={<Men />} />
+            <Route path="/women" element={<Women />} />
+            <Route path="/kids" element={<Kids />} />
+            <Route path="/shoes" element={<Shoes />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/billing" element={<BillingPage />} />
+            <Route path="/contact" element={<Contact />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ClerkProvider>
   </Provider>
 );

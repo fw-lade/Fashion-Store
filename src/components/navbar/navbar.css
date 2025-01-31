@@ -11,14 +11,16 @@
   align-items: center;
   gap: 12px;
 }
-.navlinks a {
+.navlinks a, .signin {
   font-size: 14px;
   font-weight: 600;
   color: #111111;
   padding: 0 10px;
   transition: 0.3s ease all;
+  cursor: pointer;
+  background-color: transparent;
 }
-.navlinks a:hover {
+.navlinks a:hover, .signin:hover {
   border-bottom: #111111 2px solid;
   transform: translateY(-5px);
 }
