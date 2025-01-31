@@ -60,7 +60,7 @@ const Nav = () => {
             MENU <MdMenu />
           </div>
           <SignedOut>
-            <SignInButton className='signnin' mode="modal" />
+            <SignInButton className='signin' mode="modal" />
           </SignedOut>
           <SignedIn>
             <UserButton />

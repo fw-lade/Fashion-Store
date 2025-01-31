@@ -18,6 +18,7 @@ import SingleProduct from "./pages/products/SingleProduct.jsx";
 import BillingPage from "./pages/billing/BillingPage.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 import { ClerkProvider } from "@clerk/clerk-react";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 // Import your Publishable Key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -33,7 +34,6 @@ createRoot(document.getElementById("root")).render(
         <ScrollToTop />
         <Routes>
           <Route element={<App />}>
-            <Route path="*" element={<Error404 />} />
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/product/:productId" element={<SingleProduct />} />
@@ -42,9 +42,27 @@ createRoot(document.getElementById("root")).render(
             <Route path="/women" element={<Women />} />
             <Route path="/kids" element={<Kids />} />
             <Route path="/shoes" element={<Shoes />} />
-            <Route path="/cart" element={<CartPage />} />
-            <Route path="/billing" element={<BillingPage />} />
+
+            {/* Protected Routes */}
+            <Route
+              path="/cart"
+              element={
+                <ProtectedRoute>
+                  <CartPage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/billing"
+              element={
+                <ProtectedRoute>
+                  <BillingPage />
+                </ProtectedRoute>
+              }
+            />
+
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Error404 />} />
           </Route>
         </Routes>
       </BrowserRouter>

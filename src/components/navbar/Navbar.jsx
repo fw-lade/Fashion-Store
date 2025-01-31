@@ -7,6 +7,12 @@ import logo from "../../assets/images/nike.svg";
 import logoo from "../../assets/images/jays.svg";
 import { MdMenu } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 
 const Navbar = () => {
   const carts = useSelector((state) => state.carts);
@@ -56,7 +62,7 @@ const Navbar = () => {
             MENU <MdMenu />
           </div>
           <SignedOut>
-            <SignInButton className="signnin" mode="modal" />
+            <SignInButton className="signin" mode="modal" />
           </SignedOut>
           <SignedIn>
             <UserButton />
